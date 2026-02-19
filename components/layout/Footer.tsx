@@ -142,12 +142,12 @@ export function Footer() {
               >
                 Mentions légales
               </Link>
-              <Link
-                href="/admin"
+              <a
+                href="/admin/login"
                 className="text-neutral-500 text-xs hover:text-neutral-300 transition-colors duration-300"
               >
                 Admin
-              </Link>
+              </a>
             </div>
           </div>
         </div>

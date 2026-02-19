@@ -72,22 +72,9 @@
   50% { transform: translateY(8px); }
 }
 
-@keyframes grain {
-  0%, 100% { transform: translate(0, 0); }
-  10% { transform: translate(-5%, -10%); }
-  20% { transform: translate(-15%, 5%); }
-  30% { transform: translate(7%, -25%); }
-  40% { transform: translate(-5%, 25%); }
-  50% { transform: translate(-15%, 10%); }
-  60% { transform: translate(15%, 0%); }
-  70% { transform: translate(0%, 15%); }
-  80% { transform: translate(3%, 35%); }
-  90% { transform: translate(-10%, 10%); }
-}
 
 /* === BASE === */
 html {
-  scroll-behavior: smooth;
   font-size: 16px;
 }
 
@@ -116,11 +103,8 @@ h1, h2, h3, h4, h5, h6 {
 .grain::before {
   content: "";
   position: absolute;
-  inset: -200%;
-  width: 400%;
-  height: 400%;
+  inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  animation: grain 8s steps(10) infinite;
   pointer-events: none;
   z-index: 1;
 }
@@ -180,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
 }
 
 .sr-up { transform: translateY(30px); }
