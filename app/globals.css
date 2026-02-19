@@ -165,6 +165,25 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+/* === SCROLL REVEAL (CSS-only animations) === */
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.sr-up { transform: translateY(30px); }
+.sr-down { transform: translateY(-30px); }
+.sr-left { transform: translateX(30px); }
+.sr-right { transform: translateX(-30px); }
+.sr-none { transform: none; }
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
 /* === ADMIN PAGE — hide site chrome === */
 body.admin-page > header,
 body.admin-page > footer {
