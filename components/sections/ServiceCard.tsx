@@ -26,7 +26,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(230,126,34,0.2),transparent_70%)]" />
           {/* Grid pattern */}
           <div
-            className="absolute inset-0 opacity-[0.06]"
+            className="absolute inset-0 opacity-[0.06] pointer-events-none"
             style={{
               backgroundImage: "linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px)",
               backgroundSize: "30px 30px",

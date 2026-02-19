@@ -23,7 +23,7 @@ export default function BlogPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(230,126,34,0.12),transparent_60%)]" />
         <div className="absolute inset-0 grain overflow-hidden" />
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{
             backgroundImage: "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
@@ -56,7 +56,7 @@ export default function BlogPage() {
                   {/* Image placeholder */}
                   <div className="aspect-[16/9] bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center text-primary-400 text-sm relative overflow-hidden">
                     <div
-                      className="absolute inset-0 opacity-[0.06]"
+                      className="absolute inset-0 opacity-[0.06] pointer-events-none"
                       style={{
                         backgroundImage: "linear-gradient(rgba(44,62,80,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(44,62,80,.3) 1px, transparent 1px)",
                         backgroundSize: "20px 20px",

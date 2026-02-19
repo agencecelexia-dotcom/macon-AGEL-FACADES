@@ -46,7 +46,7 @@ export function CookieConsent() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-50 bg-white border-t border-neutral-200 p-4 md:p-6 shadow-lg">
+    <div className="sticky bottom-0 z-50 bg-white border-t border-neutral-200 p-4 md:p-6 shadow-[0_-4px_16px_rgba(0,0,0,0.08)]">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-4">
         <p className="text-sm text-neutral-600 flex-1">
           Nous utilisons des cookies pour analyser le trafic de notre site.{" "}
