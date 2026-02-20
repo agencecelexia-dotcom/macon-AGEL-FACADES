@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Badge } from "@/components/ui/Badge";
@@ -53,16 +54,15 @@ export default function BlogPage() {
             <ScrollReveal key={post.slug} delay={i * 0.1}>
               <Link href={`/blog/${post.slug}`} className="group block h-full">
                 <Card className="h-full">
-                  {/* Image placeholder */}
-                  <div className="aspect-[16/9] bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center text-primary-400 text-sm relative overflow-hidden">
-                    <div
-                      className="absolute inset-0 opacity-[0.06] pointer-events-none"
-                      style={{
-                        backgroundImage: "linear-gradient(rgba(44,62,80,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(44,62,80,.3) 1px, transparent 1px)",
-                        backgroundSize: "20px 20px",
-                      }}
+                  {/* Image */}
+                  <div className="aspect-[16/9] relative overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                    <span className="relative">{post.title}</span>
                   </div>
                   <CardContent>
                     <div className="flex items-center gap-3 mb-3">

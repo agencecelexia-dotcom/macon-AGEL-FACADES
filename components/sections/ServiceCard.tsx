@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Building2, Hammer, Maximize2, Wrench } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import type { Service } from "@/lib/data/services";
@@ -20,23 +21,15 @@ export function ServiceCard({ service }: ServiceCardProps) {
   return (
     <Link href={`/${service.slug}`} className="group block h-full">
       <div className="h-full bg-white rounded-2xl shadow-premium border border-neutral-200/60 overflow-hidden transition-all duration-500 hover:shadow-premium-lg hover:-translate-y-2">
-        {/* Image placeholder with premium gradient */}
+        {/* Image */}
         <div className="aspect-[16/10] relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-800 via-primary-700 to-primary-600" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(230,126,34,0.2),transparent_70%)]" />
-          {/* Grid pattern */}
-          <div
-            className="absolute inset-0 opacity-[0.06] pointer-events-none"
-            style={{
-              backgroundImage: "linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px)",
-              backgroundSize: "30px 30px",
-            }}
+          <Image
+            src={service.image}
+            alt={service.title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-20 h-20 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/10 flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
-              <Icon size={36} className="text-white/80" />
-            </div>
-          </div>
           {/* Bottom gradient fade */}
           <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent" />
         </div>
