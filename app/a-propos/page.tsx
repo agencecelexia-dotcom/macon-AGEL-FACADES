@@ -16,55 +16,55 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "\u00c0 Propos | Notre Entreprise de Fa\u00e7ade",
-  description: `D\u00e9couvrez ${company.name}, sp\u00e9cialiste du ravalement de fa\u00e7ade et de l'isolation thermique \u00e0 Reims. ${company.yearsExperience} ans d'exp\u00e9rience, ${company.projectsCompleted}+ chantiers r\u00e9alis\u00e9s. Qualit\u00e9, proximit\u00e9 et transparence.`,
+  title: "À Propos | Notre Entreprise de Façade",
+  description: `Découvrez ${company.name}, spécialiste du ravalement de façade et de l'isolation thermique à Reims. ${company.yearsExperience} ans d'expérience, ${company.projectsCompleted}+ chantiers réalisés. Qualité, proximité et transparence.`,
 };
 
 const values = [
   {
     icon: CheckCircle,
-    title: "Qualit\u00e9",
+    title: "Qualité",
     description:
-      "Nous utilisons des mat\u00e9riaux de premier choix et appliquons les techniques les plus rigoureuses pour garantir la durabilit\u00e9 de chaque ouvrage.",
+      "Nous utilisons des matériaux de premier choix et appliquons les techniques les plus rigoureuses pour garantir la durabilité de chaque ouvrage.",
   },
   {
     icon: Users,
-    title: "Proximit\u00e9",
+    title: "Proximité",
     description:
-      "Artisan local bas\u00e9 \u00e0 Bezannes, nous connaissons parfaitement les sp\u00e9cificit\u00e9s de la r\u00e9gion r\u00e9moise et restons disponibles et r\u00e9actifs.",
+      "Artisan local basé à Bezannes, nous connaissons parfaitement les spécificités de la région rémoise et restons disponibles et réactifs.",
   },
   {
     icon: Eye,
     title: "Transparence",
     description:
-      "Devis d\u00e9taill\u00e9s, suivi de chantier r\u00e9gulier, communication claire. Pas de mauvaise surprise, vous savez exactement o\u00f9 en est votre projet.",
+      "Devis détaillés, suivi de chantier régulier, communication claire. Pas de mauvaise surprise, vous savez exactement où en est votre projet.",
   },
   {
     icon: ThumbsUp,
-    title: "Fiabilit\u00e9",
+    title: "Fiabilité",
     description:
-      "Respect des d\u00e9lais, des engagements et du budget. Notre r\u00e9putation repose sur la confiance que nos clients nous accordent.",
+      "Respect des délais, des engagements et du budget. Notre réputation repose sur la confiance que nos clients nous accordent.",
   },
 ];
 
 const certifications = [
   {
     icon: Shield,
-    title: "Garantie D\u00e9cennale",
+    title: "Garantie Décennale",
     description:
-      "Assurance d\u00e9cennale couvrant tous nos travaux pendant 10 ans apr\u00e8s r\u00e9ception du chantier.",
+      "Assurance décennale couvrant tous nos travaux pendant 10 ans après réception du chantier.",
   },
   {
     icon: Leaf,
     title: "RGE",
     description:
-      "Reconnu Garant de l'Environnement, qualification attestant de notre comp\u00e9tence en mati\u00e8re d'efficacit\u00e9 \u00e9nerg\u00e9tique.",
+      "Reconnu Garant de l'Environnement, qualification attestant de notre compétence en matière d'efficacité énergétique.",
   },
   {
     icon: Award,
     title: "Qualibat",
     description:
-      "Certification Qualibat attestant de notre capacit\u00e9 technique, de nos moyens humains et financiers.",
+      "Certification Qualibat attestant de notre capacité technique, de nos moyens humains et financiers.",
   },
 ];
 
@@ -73,19 +73,19 @@ const teamMembers = [
     name: "Aydin Elitas",
     role: "Dirigeant",
     description:
-      "\u00c0 la t\u00eate d'AGEL Facades, Aydin apporte son expertise et sa passion pour le m\u00e9tier de fa\u00e7adier. Son exigence de qualit\u00e9 guide chaque chantier.",
+      "À la tête d'AGEL Facades, Aydin apporte son expertise et sa passion pour le métier de façadier. Son exigence de qualité guide chaque chantier.",
   },
   {
-    name: "Chef d'\u00e9quipe",
+    name: "Chef d'équipe",
     role: "Chef de Chantier",
     description:
-      "Sp\u00e9cialiste du ravalement et de l'ITE, il encadre les \u00e9quipes sur le terrain et veille au respect des d\u00e9lais et de la qualit\u00e9.",
+      "Spécialiste du ravalement et de l'ITE, il encadre les équipes sur le terrain et veille au respect des délais et de la qualité.",
   },
   {
-    name: "\u00c9quipe de fa\u00e7adiers",
-    role: "Fa\u00e7adiers Qualifi\u00e9s",
+    name: "Équipe de façadiers",
+    role: "Façadiers Qualifiés",
     description:
-      "Une \u00e9quipe de professionnels exp\u00e9riment\u00e9s ma\u00eetrisant toutes les techniques d'enduit, de peinture et d'isolation thermique.",
+      "Une équipe de professionnels expérimentés maîtrisant toutes les techniques d'enduit, de peinture et d'isolation thermique.",
   },
 ];
 
@@ -105,11 +105,11 @@ export default function AProposPage() {
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-5 tracking-tight">
-            \u00c0 propos de {company.name}
+            À propos de {company.name}
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto font-light leading-relaxed">
-            Sp\u00e9cialiste du ravalement de fa\u00e7ade et de l&apos;isolation thermique
-            \u00e0 Reims et dans toute la Marne.
+            Spécialiste du ravalement de façade et de l&apos;isolation thermique
+            à Reims et dans toute la Marne.
           </p>
         </div>
       </section>
@@ -119,29 +119,29 @@ export default function AProposPage() {
           <ScrollReveal direction="left">
             <SectionTitle
               title="Notre histoire"
-              subtitle="Un savoir-faire au service de vos fa\u00e7ades."
+              subtitle="Un savoir-faire au service de vos façades."
               align="left"
             />
             <div className="space-y-4 text-neutral-600 leading-relaxed">
               <p>
-                Fort d&apos;une exp\u00e9rience de plus de{" "}
+                Fort d&apos;une expérience de plus de{" "}
                 <strong>{company.yearsExperience} ans</strong> dans le secteur du
-                b\u00e2timent, AGEL Facades s&apos;est sp\u00e9cialis\u00e9 dans le ravalement de
-                fa\u00e7ade, l&apos;isolation thermique par l&apos;ext\u00e9rieur (ITE) et les
-                travaux de peinture et d&apos;enduits dans la r\u00e9gion de Reims.
+                bâtiment, AGEL Facades s&apos;est spécialisé dans le ravalement de
+                façade, l&apos;isolation thermique par l&apos;extérieur (ITE) et les
+                travaux de peinture et d&apos;enduits dans la région de Reims.
               </p>
               <p>
                 Filiale du <strong>Groupe FCP</strong>, notre entreprise allie
-                l&apos;expertise d&apos;un groupe structur\u00e9 \u00e0 la r\u00e9activit\u00e9 d&apos;un
+                l&apos;expertise d&apos;un groupe structuré à la réactivité d&apos;un
                 artisan local. Nous intervenons aussi bien pour les particuliers que
-                pour les copropri\u00e9t\u00e9s et les professionnels du Grand Est.
+                pour les copropriétés et les professionnels du Grand Est.
               </p>
               <p>
                 Notre certification <strong>RGE</strong> et <strong>Qualibat</strong>{" "}
-                atteste de notre savoir-faire et vous permet de b\u00e9n\u00e9ficier des aides
-                financi\u00e8res pour vos travaux d&apos;isolation. Avec plus de{" "}
-                <strong>{company.projectsCompleted} chantiers r\u00e9alis\u00e9s</strong>, notre
-                r\u00e9putation s&apos;est construite sur la qualit\u00e9 de nos finitions et le
+                atteste de notre savoir-faire et vous permet de bénéficier des aides
+                financières pour vos travaux d&apos;isolation. Avec plus de{" "}
+                <strong>{company.projectsCompleted} chantiers réalisés</strong>, notre
+                réputation s&apos;est construite sur la qualité de nos finitions et le
                 respect de nos engagements.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function AProposPage() {
             <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-premium">
               <Image
                 src="/images/about/equipe.jpg"
-                alt="L'\u00e9quipe AGEL Facades sur chantier"
+                alt="L'équipe AGEL Facades sur chantier"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -189,8 +189,8 @@ export default function AProposPage() {
       <SectionWrapper>
         <ScrollReveal>
           <SectionTitle
-            title="Notre \u00e9quipe"
-            subtitle="Des professionnels passionn\u00e9s \u00e0 votre service."
+            title="Notre équipe"
+            subtitle="Des professionnels passionnés à votre service."
           />
         </ScrollReveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -217,7 +217,7 @@ export default function AProposPage() {
         <ScrollReveal>
           <SectionTitle
             title="Nos certifications"
-            subtitle="Des qualifications reconnues pour votre tranquillit\u00e9 d'esprit."
+            subtitle="Des qualifications reconnues pour votre tranquillité d'esprit."
           />
         </ScrollReveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
