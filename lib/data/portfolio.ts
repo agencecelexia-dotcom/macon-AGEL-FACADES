@@ -108,6 +108,53 @@ export const portfolioItems: PortfolioItem[] = [
     duration: "2 mois",
     surface: "40 m²",
   },
+  {
+    id: "renovation-toiture",
+    title: "Rénovation toiture et zinguerie",
+    description: "Remplacement complet de la couverture en tuiles, réfection des solins, pose de gouttières zinc et isolation sous rampants.",
+    category: "renovation",
+    location: "Sainte-Foy-lès-Lyon (69)",
+    year: 2025,
+    imageBefore: "/images/portfolio/toiture-avant.jpg",
+    imageAfter: "/images/portfolio/toiture-apres.jpg",
+    images: [
+      "/images/portfolio/toiture-1.jpg",
+      "/images/portfolio/toiture-2.jpg",
+    ],
+    duration: "2 semaines",
+    surface: "110 m²",
+  },
+  {
+    id: "mur-cloture",
+    title: "Mur de clôture en pierre",
+    description: "Construction d'un mur de clôture en pierre naturelle de 45 mètres linéaires avec portail et piliers intégrés. Fondations béton et couronnement en pierre taillée.",
+    category: "construction",
+    location: "Décines-Charpieu (69)",
+    year: 2024,
+    imageBefore: "/images/portfolio/cloture-avant.jpg",
+    imageAfter: "/images/portfolio/cloture-apres.jpg",
+    images: [
+      "/images/portfolio/cloture-1.jpg",
+    ],
+    duration: "3 semaines",
+    surface: "45 ml",
+  },
+  {
+    id: "amenagement-combles",
+    title: "Aménagement de combles 50m²",
+    description: "Transformation de combles perdus en deux chambres et une salle d'eau. Renforcement du plancher, création de lucarnes et cloisons de distribution.",
+    category: "extension",
+    location: "Bron (69)",
+    year: 2025,
+    imageBefore: "/images/portfolio/combles-avant.jpg",
+    imageAfter: "/images/portfolio/combles-apres.jpg",
+    images: [
+      "/images/portfolio/combles-1.jpg",
+      "/images/portfolio/combles-2.jpg",
+    ],
+    duration: "3 mois",
+    surface: "50 m²",
+  },
 ];
 
 export const portfolioCategories: { value: PortfolioCategory | "all"; label: string }[] = [
