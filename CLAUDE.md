@@ -8,7 +8,7 @@
 - **Package manager** : npm
 - **Node** : v24.x
 - **Form** : react-hook-form + zod v4
-- **Animations** : framer-motion (sélectif)
+- **Animations** : CSS animations + IntersectionObserver (ScrollReveal)
 - **Icônes** : lucide-react
 
 ## Structure du projet
@@ -42,7 +42,8 @@ macon/
 │   ├── data/                    # Données statiques TypeScript
 │   ├── schemas/                 # Schémas Zod
 │   └── utils.ts                 # cn(), formatPhone()
-└── public/images/               # Assets (hero, services, portfolio, team)
+├── public/images/               # Assets (voir section Images ci-dessous)
+└── PROMPTS-IMAGES.md            # Prompts de génération IA pour les 20 images
 ```
 
 ## Design system
@@ -73,6 +74,39 @@ macon/
 - Utiliser les classes utilitaires en priorité
 - Design system dans `globals.css` via `@theme inline { }`
 - Pas de `tailwind.config.ts` (Tailwind v4 = CSS-first)
+
+## Images (20 au total)
+
+> Prompts détaillés dans `PROMPTS-IMAGES.md`. Format JPEG, pas de texte/logo/watermark.
+
+### Services (`public/images/services/`) — 3 images, 1800×1200
+
+| Fichier | Description |
+|---------|-------------|
+| `construction-neuve.jpg` | Maison neuve terminée, crépi blanc, tuiles, pelouse |
+| `renovation.jpg` | Maçon rejointoyant un mur en pierres dorées lyonnaises |
+| `extension.jpg` | Extension toit plat + baies vitrées accolée à maison pierre |
+
+### Blog (`public/images/blog/`) — 5 images, 1800×1200
+
+| Fichier | Description |
+|---------|-------------|
+| `prix-maconnerie.jpg` | Flat lay bureau : calculatrice, devis, mètre, échantillons |
+| `choisir-macon.jpg` | Artisan serrant la main de clients devant maison |
+| `extension-permis.jpg` | Plans archi + permis de construire sur bureau |
+| `renovation-facade.jpg` | Façade lyonnaise en cours de ravalement, échafaudage |
+| `aides-financieres.jpg` | Tirelire maison + billets + maquette bois |
+
+### Portfolio (`public/images/portfolio/`) — 12 images (6 projets × avant/après), 1200×900
+
+| Projet | Fichiers |
+|--------|----------|
+| Maison plain-pied 120m² | `maison-plainpied-avant.jpg`, `maison-plainpied-apres.jpg` |
+| Ravalement façade | `facade-avant.jpg`, `facade-apres.jpg` |
+| Extension latérale 35m² | `extension-avant.jpg`, `extension-apres.jpg` |
+| Surélévation R+1 | `surelevation-avant.jpg`, `surelevation-apres.jpg` |
+| Ouverture mur porteur | `mur-porteur-avant.jpg`, `mur-porteur-apres.jpg` |
+| Garage double | `garage-avant.jpg`, `garage-apres.jpg` |
 
 ## Commandes
 
