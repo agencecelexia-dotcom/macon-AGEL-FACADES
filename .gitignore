@@ -41,5 +41,7 @@ next-env.d.ts
 # Vercel
 .vercel
 
-# Admin storage
-storage/
+# Admin storage — ignore live data but commit seed files
+storage/*.json
+!storage/submissions.json
+!storage/analytics.json

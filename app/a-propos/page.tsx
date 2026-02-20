@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { CTABanner } from "@/components/sections/CTABanner";
@@ -12,7 +13,6 @@ import {
   Award,
   Leaf,
   CheckCircle,
-  Hammer,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -148,13 +148,15 @@ export default function AProposPage() {
               </p>
             </div>
           </ScrollReveal>
-          {/* Image placeholder */}
           <ScrollReveal direction="right" delay={0.15}>
-            <div className="aspect-[4/3] bg-neutral-50 rounded-2xl flex items-center justify-center text-neutral-400 text-sm border border-neutral-100 shadow-premium">
-              <div className="text-center">
-                <Hammer size={48} className="mx-auto mb-3 text-neutral-300" />
-                <p>Photo de l&apos;équipe / du chantier</p>
-              </div>
+            <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-premium">
+              <Image
+                src="/images/about/equipe.jpg"
+                alt="L'équipe Maçonnerie Durand sur chantier"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </ScrollReveal>
         </div>
