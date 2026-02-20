@@ -8,7 +8,7 @@ const items = [
   {
     icon: Award,
     label: `+ de ${company.yearsExperience} ans d'expérience`,
-    sublabel: "Depuis 2009",
+    sublabel: "Depuis 2017",
   },
   {
     icon: Shield,

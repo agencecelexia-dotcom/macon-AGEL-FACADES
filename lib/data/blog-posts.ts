@@ -13,143 +13,162 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "prix-maconnerie-2026",
-    title: "Quel est le prix au m² pour de la maçonnerie en 2026 ?",
-    excerpt: "Découvrez les tarifs moyens pour vos travaux de maçonnerie : construction, rénovation, extension. Guide complet des prix actualisés.",
-    content: `## Les prix de la maçonnerie en 2026
+    slug: "prix-ravalement-facade-2026",
+    title: "Quel est le prix d'un ravalement de façade en 2026 ?",
+    excerpt: "Découvrez les tarifs moyens pour un ravalement de façade : nettoyage, enduit, peinture, ITE. Guide complet des prix actualisés.",
+    content: `## Les prix du ravalement de façade en 2026
 
-Les tarifs de la maçonnerie varient selon le type de travaux, les matériaux utilisés et la complexité du chantier.
+Les tarifs d'un ravalement de façade varient selon le type de travaux, l'état du support et la surface à traiter.
 
-### Construction neuve
+### Nettoyage de façade
 
-Pour une construction neuve en gros œuvre, comptez en moyenne :
+Le nettoyage seul, sans travaux de réparation :
 
-- **Fondations** : 100 à 200 €/m²
-- **Élévation des murs** : 40 à 80 €/m²
-- **Dalle béton** : 50 à 100 €/m²
-- **Charpente** : 60 à 130 €/m²
+- **Nettoyage haute pression** : 10 à 25 €/m²
+- **Gommage** : 20 à 40 €/m²
+- **Sablage** : 25 à 50 €/m²
 
-### Rénovation
+### Ravalement avec enduit
 
-Les travaux de rénovation en maçonnerie se situent généralement entre :
+Pour un ravalement complet avec enduit de finition :
 
-- **Ravalement de façade** : 30 à 100 €/m²
-- **Rejointoiement** : 25 à 60 €/m²
-- **Ouverture mur porteur** : 1 500 à 5 000 € selon la portée
+- **Enduit monocouche** : 25 à 50 €/m²
+- **Enduit traditionnel** (2 couches) : 35 à 60 €/m²
+- **Enduit à la chaux** : 40 à 70 €/m²
 
-### Extension
+### Peinture de façade
 
-L'extension de maison coûte en moyenne :
+Les travaux de peinture extérieure :
 
-- **Extension classique** : 1 200 à 2 500 €/m²
-- **Surélévation** : 1 500 à 3 000 €/m²
-- **Véranda maçonnée** : 1 000 à 2 000 €/m²
+- **Peinture acrylique** : 15 à 30 €/m²
+- **Peinture siloxane** : 25 à 45 €/m²
+- **Peinture pliolite** : 20 à 35 €/m²
+
+### Isolation par l'extérieur (ITE)
+
+L'ITE combine isolation et embellissement :
+
+- **ITE en PSE** : 80 à 120 €/m²
+- **ITE en laine de roche** : 100 à 150 €/m²
+- **ITE en fibre de bois** : 120 à 180 €/m²
 
 ### Comment obtenir le meilleur prix ?
 
 1. Demandez plusieurs devis pour comparer
-2. Privilégiez un artisan local avec garantie décennale
-3. Prévoyez les travaux hors période hivernale si possible
-4. Groupez les travaux pour réduire les coûts de déplacement
+2. Privilégiez un artisan local certifié RGE
+3. Prévoyez les travaux au printemps ou en automne
+4. Renseignez-vous sur les aides financières disponibles
 
 **Besoin d'un devis précis pour votre projet ?** [Contactez-nous](/contact) pour un devis gratuit sous 48h.`,
-    author: "Maçonnerie Durand",
+    author: "AGEL Facades",
     date: "2026-02-01",
     category: "Prix & Tarifs",
     image: "/images/blog/prix-maconnerie.jpg",
     readingTime: 5,
-    tags: ["prix", "tarifs", "maçonnerie", "devis"],
+    tags: ["prix", "tarifs", "ravalement", "façade", "devis"],
   },
   {
-    slug: "choisir-son-macon",
-    title: "Comment choisir son maçon : 7 critères essentiels",
-    excerpt: "Ne vous trompez pas dans le choix de votre maçon. Voici les 7 critères indispensables pour trouver un professionnel fiable.",
-    content: `## 7 critères pour bien choisir son maçon
+    slug: "choisir-entreprise-ravalement",
+    title: "Comment choisir son entreprise de ravalement : 7 critères essentiels",
+    excerpt: "Ne vous trompez pas dans le choix de votre façadier. Voici les 7 critères indispensables pour trouver un professionnel fiable.",
+    content: `## 7 critères pour bien choisir son façadier
 
-Choisir le bon maçon est crucial pour la réussite de votre projet. Voici les critères à vérifier.
+Choisir la bonne entreprise de ravalement est crucial pour la réussite de votre projet. Voici les critères à vérifier.
 
 ### 1. La garantie décennale
 
-C'est le critère n°1. Tout maçon doit être couvert par une assurance décennale. Demandez une copie de l'attestation avant de signer le devis.
+C'est le critère n°1. Tout façadier doit être couvert par une assurance décennale. Demandez une copie de l'attestation avant de signer le devis.
 
-### 2. Les références et réalisations
+### 2. La certification RGE
 
-Un bon maçon sera fier de vous montrer ses réalisations précédentes. Demandez des photos et si possible les coordonnées de clients précédents.
+Si vous envisagez une ITE, la certification RGE (Reconnu Garant de l'Environnement) est indispensable pour bénéficier des aides financières de l'État.
 
-### 3. Les avis clients
+### 3. Les références et réalisations
+
+Un bon façadier sera fier de vous montrer ses réalisations précédentes. Demandez des photos avant/après et si possible les coordonnées de clients précédents.
+
+### 4. Les avis clients
 
 Consultez les avis Google, les témoignages sur le site web. Un artisan avec de nombreux avis positifs et vérifiés est un gage de confiance.
 
-### 4. Le devis détaillé
+### 5. Le devis détaillé
 
 Méfiez-vous des devis trop vagues. Un bon devis doit détailler :
-- Les matériaux utilisés avec les quantités
-- La main d'œuvre
-- Les délais prévisionnels
+- Les produits utilisés avec les références
+- La préparation des supports
+- Le nombre de couches
 - Les conditions de paiement
 
-### 5. Les qualifications
+### 6. La qualification Qualibat
 
-Les labels comme **RGE** ou **Qualibat** attestent d'un niveau de compétence vérifié par un organisme indépendant.
+Le label **Qualibat** atteste d'un niveau de compétence vérifié par un organisme indépendant. C'est un gage de sérieux et de savoir-faire.
 
-### 6. La proximité géographique
+### 7. La proximité géographique
 
-Un artisan local connaît les spécificités du sol, le PLU de votre commune, et sera plus réactif en cas de besoin.
+Un artisan local connaît les spécificités climatiques de votre région et les réglementations locales d'urbanisme. Il sera plus réactif en cas de besoin.
 
-### 7. Le relationnel
-
-Le chantier va durer plusieurs semaines voire mois. Le courant doit bien passer avec votre maçon pour une collaboration sereine.
-
-**Vous cherchez un maçon de confiance ?** [Demandez votre devis gratuit](/contact) et jugez par vous-même notre sérieux.`,
-    author: "Maçonnerie Durand",
+**Vous cherchez un façadier de confiance à Reims ?** [Demandez votre devis gratuit](/contact) et jugez par vous-même notre sérieux.`,
+    author: "AGEL Facades",
     date: "2026-01-15",
     category: "Conseils",
     image: "/images/blog/choisir-macon.jpg",
     readingTime: 4,
-    tags: ["conseils", "maçon", "choix", "qualité"],
+    tags: ["conseils", "façadier", "choix", "qualité", "RGE"],
   },
   {
-    slug: "extension-maison-permis-construire",
-    title: "Extension maison : permis de construire ou déclaration préalable ?",
-    excerpt: "Quelle autorisation d'urbanisme pour votre extension de maison ? Permis de construire ou déclaration préalable ? On vous explique tout.",
-    content: `## Quelle autorisation pour votre extension ?
+    slug: "ite-guide-complet",
+    title: "Isolation thermique par l'extérieur (ITE) : le guide complet",
+    excerpt: "Tout savoir sur l'ITE : avantages, matériaux, étapes de mise en oeuvre, prix et aides financières. Le guide le plus complet.",
+    content: `## ITE : tout ce que vous devez savoir
 
-Avant de commencer des travaux d'extension, il est essentiel de savoir quelle autorisation d'urbanisme vous devez obtenir.
+L'isolation thermique par l'extérieur est la solution la plus efficace pour réduire vos factures d'énergie tout en embellissant votre façade.
 
-### Déclaration préalable de travaux
+### Pourquoi choisir l'ITE ?
 
-La déclaration préalable (DP) suffit dans ces cas :
-- Extension de **moins de 20 m²** de surface de plancher
-- En zone urbaine avec PLU : extension de **moins de 40 m²**
-- À condition que la surface totale après travaux ne dépasse pas 150 m²
+- **Économies d'énergie** : réduction de 25 à 40 % des déperditions par les murs
+- **Confort thermique** : été comme hiver, votre intérieur reste agréable
+- **Pas de perte de surface** : contrairement à l'isolation intérieure
+- **Embellissement** : votre façade fait peau neuve
+- **Valorisation** : augmentation de la valeur de votre bien
 
-### Permis de construire
+### Les matériaux isolants
 
-Le permis de construire (PC) est obligatoire quand :
-- L'extension dépasse **20 m²** (ou 40 m² en zone urbaine avec PLU)
-- La surface totale après travaux dépasse **150 m²**
-- Le projet modifie la structure porteuse ou la façade
+#### Polystyrène expansé (PSE)
+Le plus courant et le plus économique. Bon rapport performance/prix.
+- Conductivité : 0,032 à 0,038 W/m.K
+- Prix : 80 à 120 €/m² posé
 
-### Cas particulier : le recours à un architecte
+#### Laine de roche
+Excellentes performances acoustiques et résistance au feu.
+- Conductivité : 0,034 à 0,040 W/m.K
+- Prix : 100 à 150 €/m² posé
 
-Si la surface totale de votre maison après extension dépasse **150 m²**, le recours à un architecte est **obligatoire**.
+#### Fibre de bois
+Solution écologique avec excellent déphasage thermique estival.
+- Conductivité : 0,038 à 0,042 W/m.K
+- Prix : 120 à 180 €/m² posé
 
-### Les délais d'instruction
+### Les étapes de mise en oeuvre
 
-- **Déclaration préalable** : 1 mois
-- **Permis de construire** : 2 mois (3 mois si secteur protégé)
+1. **Préparation du support** : nettoyage et réparation de la façade existante
+2. **Pose de l'isolant** : collage et/ou chevillage des panneaux
+3. **Sous-enduit armé** : application avec treillis en fibre de verre
+4. **Enduit de finition** : choix de la texture et du coloris
 
-### Notre conseil
+### Les aides financières en 2026
 
-Avant tout projet d'extension, consultez le PLU de votre commune et rapprochez-vous du service urbanisme de votre mairie. Nous pouvons également vous accompagner dans ces démarches.
+- **MaPrimeRénov'** : jusqu'à 75 €/m² selon vos revenus
+- **CEE** : 10 à 20 €/m² de prime énergie
+- **TVA à 5,5 %** au lieu de 20 %
+- **Éco-PTZ** : jusqu'à 50 000 € à taux zéro
 
-**Vous avez un projet d'extension ?** [Contactez-nous](/contact) pour une étude de faisabilité gratuite.`,
-    author: "Maçonnerie Durand",
+**Envie de faire isoler votre maison ?** [Contactez-nous](/contact) pour un diagnostic thermique gratuit.`,
+    author: "AGEL Facades",
     date: "2025-12-20",
-    category: "Réglementation",
+    category: "Guides",
     image: "/images/blog/extension-permis.jpg",
-    readingTime: 4,
-    tags: ["extension", "permis de construire", "déclaration préalable", "urbanisme"],
+    readingTime: 6,
+    tags: ["ITE", "isolation", "thermique", "économies", "énergie"],
   },
   {
     slug: "renovation-facade-etapes-erreurs",
@@ -219,7 +238,7 @@ Les prix varient de **30 à 100 €/m²** selon l'état de la façade, le type d
 Ne repoussez pas un ravalement de façade. Plus vous attendez, plus les dégradations s'aggravent et plus le chantier sera coûteux. Un ravalement préventif coûte toujours moins cher qu'une réparation lourde.
 
 **Votre façade a besoin d'un coup de jeune ?** [Demandez votre devis gratuit](/contact) et bénéficiez d'un diagnostic offert.`,
-    author: "Maçonnerie Durand",
+    author: "AGEL Facades",
     date: "2026-02-10",
     category: "Conseils",
     image: "/images/blog/renovation-facade.jpg",
@@ -227,21 +246,20 @@ Ne repoussez pas un ravalement de façade. Plus vous attendez, plus les dégrada
     tags: ["façade", "ravalement", "rénovation", "enduit", "conseils"],
   },
   {
-    slug: "aides-financieres-travaux-maconnerie-2026",
-    title: "Quelles aides financières pour vos travaux de maçonnerie en 2026 ?",
-    excerpt: "MaPrimeRénov', éco-PTZ, TVA réduite, aides locales… Tour d'horizon complet des dispositifs pour financer vos travaux de maçonnerie.",
-    content: `## Aides financières pour la maçonnerie en 2026
+    slug: "aides-financieres-ravalement-ite-2026",
+    title: "Quelles aides financières pour votre ravalement ou ITE en 2026 ?",
+    excerpt: "MaPrimeRénov', éco-PTZ, TVA réduite, CEE... Tour d'horizon complet des dispositifs pour financer vos travaux de façade.",
+    content: `## Aides financières pour vos travaux de façade en 2026
 
-Bonne nouvelle : de nombreuses aides existent pour alléger le coût de vos travaux de maçonnerie, surtout lorsqu'ils améliorent la performance énergétique de votre logement.
+Bonne nouvelle : de nombreuses aides existent pour alléger le coût de vos travaux de façade, surtout lorsqu'ils améliorent la performance énergétique de votre logement.
 
 ### MaPrimeRénov'
 
 Le dispositif phare de l'État reste **MaPrimeRénov'**, accessible à tous les propriétaires sans condition de revenus (le montant varie en fonction des ressources).
 
-**Travaux de maçonnerie éligibles :**
+**Travaux éligibles :**
 - Isolation thermique par l'extérieur (ITE) — jusqu'à **75 €/m²** pour les ménages modestes
 - Isolation des murs par l'intérieur (ITI) — jusqu'à **25 €/m²**
-- Isolation des planchers bas — jusqu'à **10 €/m²**
 
 **Conditions :**
 - Logement de plus de 15 ans
@@ -263,25 +281,24 @@ L'éco-PTZ permet d'emprunter **jusqu'à 50 000 €** sans payer d'intérêts po
 
 Pour les travaux de rénovation sur des logements de plus de 2 ans :
 - **TVA à 5,5 %** pour les travaux d'amélioration énergétique (ITE, isolation)
-- **TVA à 10 %** pour les autres travaux de rénovation (ravalement, ouverture mur porteur, rejointoiement)
+- **TVA à 10 %** pour les autres travaux de rénovation (ravalement, peinture)
 
 Cet avantage est appliqué directement sur le devis, sans démarche particulière de votre part.
 
 ### Les Certificats d'Économies d'Énergie (CEE)
 
-Les fournisseurs d'énergie (EDF, Engie, TotalÉnergies…) financent une partie de vos travaux via les CEE, aussi appelés "primes énergie".
+Les fournisseurs d'énergie (EDF, Engie, TotalÉnergies...) financent une partie de vos travaux via les CEE, aussi appelés "primes énergie".
 
 **Montants indicatifs :**
 - ITE : **10 à 20 €/m²** de prime
-- Isolation planchers : **5 à 12 €/m²** de prime
 - Cumulables avec MaPrimeRénov'
 
-### Les aides locales dans la métropole de Lyon
+### Les aides locales dans le Grand Est
 
-La Métropole de Lyon et la Région Auvergne-Rhône-Alpes proposent des aides complémentaires :
+La Région Grand Est et les collectivités locales proposent des aides complémentaires :
 
-- **Écoréno'v** (Métropole de Lyon) : accompagnement et aides financières pour la rénovation globale, jusqu'à **15 000 €** de subventions
-- **Région Auvergne-Rhône-Alpes** : aides spécifiques pour l'isolation et le chauffage, selon les programmes en vigueur
+- **Région Grand Est** : aides spécifiques pour la rénovation énergétique
+- **Reims Métropole** : programmes d'accompagnement à la rénovation
 - **ANAH** (Agence Nationale de l'Habitat) : financement jusqu'à **50 % du montant des travaux** pour les ménages très modestes
 
 ### Comment cumuler les aides ?
@@ -308,10 +325,10 @@ Soit une économie de **près de 60 %** sur le coût total !
 
 ### Notre accompagnement
 
-Chez Maçonnerie Durand, nous connaissons parfaitement ces dispositifs et nous vous aidons à y voir clair. Lors de l'établissement de votre devis, nous identifions les aides auxquelles vous avez droit et nous vous orientons dans vos démarches.
+Chez AGEL Facades, nous connaissons parfaitement ces dispositifs et nous vous aidons à y voir clair. Lors de l'établissement de votre devis, nous identifions les aides auxquelles vous avez droit et nous vous orientons dans vos démarches.
 
 **Envie de connaître les aides disponibles pour votre projet ?** [Contactez-nous](/contact) pour un devis détaillé avec estimation des aides.`,
-    author: "Maçonnerie Durand",
+    author: "AGEL Facades",
     date: "2026-01-28",
     category: "Aides & Financements",
     image: "/images/blog/aides-financieres.jpg",
@@ -320,4 +337,4 @@ Chez Maçonnerie Durand, nous connaissons parfaitement ces dispositifs et nous v
   },
 ];
 
-export const blogCategories = ["Tous", "Prix & Tarifs", "Conseils", "Réglementation", "Aides & Financements"];
+export const blogCategories = ["Tous", "Prix & Tarifs", "Conseils", "Guides", "Aides & Financements"];

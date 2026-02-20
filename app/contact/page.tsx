@@ -8,13 +8,12 @@ import { company } from "@/lib/data/company";
 export const metadata: Metadata = {
   title: "Devis Gratuit | Contactez-nous",
   description:
-    "Demandez votre devis gratuit pour vos travaux de maçonnerie. Réponse sous 48h. Appelez-nous ou remplissez le formulaire en ligne.",
+    "Demandez votre devis gratuit pour vos travaux de façade. Ravalement, ITE, peinture. Réponse sous 48h. Appelez-nous ou remplissez le formulaire.",
 };
 
 export default function ContactPage() {
   return (
     <>
-      {/* Hero */}
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-800 to-primary-700" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(230,126,34,0.12),transparent_60%)]" />
@@ -38,12 +37,10 @@ export default function ContactPage() {
 
       <SectionWrapper>
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-          {/* Formulaire multi-étapes */}
           <ScrollReveal className="lg:col-span-3" direction="left">
             <QuoteForm />
           </ScrollReveal>
 
-          {/* Contact info */}
           <ScrollReveal className="lg:col-span-2 space-y-8" direction="right" delay={0.15}>
             <div>
               <h3 className="font-bold text-primary mb-5 tracking-tight">Nos coordonnées</h3>
@@ -55,7 +52,7 @@ export default function ContactPage() {
                     </div>
                     <div className="pt-1">
                       <p className="font-medium">{company.phone}</p>
-                      <p className="text-sm text-neutral-400">Lun-Ven 8h-18h</p>
+                      <p className="text-sm text-neutral-400">Lun-Ven 8h-18h30</p>
                     </div>
                   </a>
                 </li>
@@ -100,7 +97,7 @@ export default function ContactPage() {
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent/10 to-accent/5 flex items-center justify-center border border-accent/10 shrink-0">
                     <Award size={14} className="text-accent" />
                   </div>
-                  <span>{company.yearsExperience}+ ans d&apos;expérience</span>
+                  <span>Certifié RGE &amp; Qualibat</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent/10 to-accent/5 flex items-center justify-center border border-accent/10 shrink-0">
@@ -111,7 +108,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Map placeholder */}
             <div className="aspect-[4/3] bg-neutral-50 rounded-2xl flex items-center justify-center text-neutral-400 text-sm border border-neutral-100 shadow-premium">
               Carte Google Maps (à intégrer)
             </div>

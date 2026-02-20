@@ -2,7 +2,7 @@ import { z } from "zod";
 
 // --- Step 1: Project Type ---
 export const stepProjectTypeSchema = z.object({
-  projectType: z.enum(["construction", "renovation", "extension", "autre"], {
+  projectType: z.enum(["ravalement", "isolation", "peinture", "autre"], {
     message: "Veuillez sélectionner un type de projet",
   }),
 });

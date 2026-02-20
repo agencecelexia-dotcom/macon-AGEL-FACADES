@@ -11,21 +11,16 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({
-  title = `Votre maçon de confiance à ${company.address.city}`,
-  subtitle = "Construction, rénovation, extension — Devis gratuit sous 48h",
+  title = `Spécialiste façade à ${company.address.city === "Bezannes" ? "Reims" : company.address.city}`,
+  subtitle = "Ravalement, isolation thermique, peinture & enduits — Devis gratuit sous 48h",
   showBadges = true,
 }: HeroSectionProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background layers */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-800 to-primary-700" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(230,126,34,0.15),transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(44,62,80,0.4),transparent_60%)]" />
-
-      {/* Grain texture */}
       <div className="absolute inset-0 grain overflow-hidden" />
-
-      {/* Decorative grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{
@@ -33,34 +28,29 @@ export function HeroSection({
           backgroundSize: "60px 60px",
         }}
       />
-
-      {/* Floating accent orbs */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-1/6 w-64 h-64 bg-accent/5 rounded-full blur-2xl" />
 
-      {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 text-center text-white pt-20">
-        {/* Badge */}
         <div
           className="opacity-0"
           style={{ animation: "hero-in 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s forwards" }}
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm text-white/90 mb-8 backdrop-blur-sm">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-            {company.yearsExperience}+ ans d&apos;expérience à Lyon et environs
+            {company.yearsExperience}+ ans d&apos;expérience à Reims et environs
           </span>
         </div>
 
-        {/* Title */}
         <h1
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight opacity-0"
           style={{ animation: "hero-in 0.7s cubic-bezier(0.16,1,0.3,1) 0.2s forwards" }}
         >
-          {title.split("Lyon").map((part, i, arr) =>
+          {title.split("Reims").map((part, i, arr) =>
             i < arr.length - 1 ? (
               <span key={i}>
                 {part}
-                <span className="gradient-text">Lyon</span>
+                <span className="gradient-text">Reims</span>
               </span>
             ) : (
               <span key={i}>{part}</span>
@@ -68,7 +58,6 @@ export function HeroSection({
           )}
         </h1>
 
-        {/* Subtitle */}
         <p
           className="text-lg sm:text-xl md:text-2xl text-white/70 mb-12 max-w-2xl mx-auto font-light opacity-0"
           style={{ animation: "hero-in 0.6s cubic-bezier(0.16,1,0.3,1) 0.4s forwards" }}
@@ -76,7 +65,6 @@ export function HeroSection({
           {subtitle}
         </p>
 
-        {/* CTAs */}
         <div
           className="flex flex-col sm:flex-row gap-4 justify-center mb-16 opacity-0"
           style={{ animation: "hero-in 0.6s cubic-bezier(0.16,1,0.3,1) 0.5s forwards" }}
@@ -96,15 +84,14 @@ export function HeroSection({
           </Button>
         </div>
 
-        {/* Trust badges */}
         {showBadges && (
           <div
             className="flex flex-wrap justify-center gap-4 md:gap-8 opacity-0"
             style={{ animation: "hero-in 0.6s cubic-bezier(0.16,1,0.3,1) 0.7s forwards" }}
           >
             {[
-              { label: "Assurance décennale" },
-              { label: "Garantie satisfaction" },
+              { label: "Certifié RGE" },
+              { label: "Garantie décennale" },
               { label: `${company.googleRating}/5 — ${company.googleReviewCount} avis`, icon: true },
             ].map((badge) => (
               <span
@@ -123,7 +110,6 @@ export function HeroSection({
         )}
       </div>
 
-      {/* Scroll indicator */}
       <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0"
         style={{ animation: "fade-in 0.6s ease 1.2s forwards" }}

@@ -7,15 +7,14 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { services } from "@/lib/data/services";
 
 export const metadata: Metadata = {
-  title: "Nos Services de Maçonnerie",
+  title: "Nos Services de Façade",
   description:
-    "Découvrez nos services de maçonnerie : construction neuve, rénovation, extension et surélévation. Artisan qualifié, garantie décennale. Devis gratuit sous 48h.",
+    "Découvrez nos services : ravalement de façade, isolation thermique par l'extérieur (ITE), peinture et enduits. Artisan RGE qualifié, garantie décennale. Devis gratuit sous 48h.",
 };
 
 export default function ServicesPage() {
   return (
     <>
-      {/* Hero */}
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-800 to-primary-700" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(230,126,34,0.12),transparent_60%)]" />
@@ -29,16 +28,15 @@ export default function ServicesPage() {
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-5 tracking-tight">
-            Nos services de maçonnerie
+            Nos services de façade
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto font-light leading-relaxed">
-            De la construction neuve à la rénovation en passant par l&apos;extension,
-            nous réalisons tous vos projets de maçonnerie avec expertise.
+            Du ravalement à l&apos;isolation thermique en passant par la peinture et les enduits,
+            nous réalisons tous vos projets de façade avec expertise.
           </p>
         </div>
       </section>
 
-      {/* Services Grid */}
       <SectionWrapper>
         <ScrollReveal>
           <SectionTitle

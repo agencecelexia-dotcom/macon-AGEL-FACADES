@@ -9,17 +9,17 @@ import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { AnalyticsTracker } from "@/components/features/AnalyticsTracker";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.maconnerie-durand.fr"),
+  metadataBase: new URL("https://www.agelfacades.fr"),
   title: {
-    default: "Maçonnerie Durand | Construction & Rénovation à Lyon",
-    template: "%s | Maçonnerie Durand",
+    default: "AGEL Facades | Ravalement de Façade & ITE à Reims",
+    template: "%s | AGEL Facades",
   },
   description:
-    "Entreprise de maçonnerie à Lyon et environs. Construction neuve, rénovation, extension. Devis gratuit sous 48h. Garantie décennale.",
+    "Spécialiste du ravalement de façade à Reims et environs. Ravalement, isolation thermique (ITE), peinture, enduits. Devis gratuit sous 48h. Garantie décennale, RGE.",
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    siteName: "Maçonnerie Durand",
+    siteName: "AGEL Facades",
   },
 };
 

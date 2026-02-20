@@ -7,18 +7,18 @@ import { Building2, Hammer, Maximize2, Wrench } from "lucide-react";
 
 const projectTypes = [
   {
-    value: "construction" as const,
-    label: "Construction neuve",
+    value: "ravalement" as const,
+    label: "Ravalement de façade",
     icon: Building2,
   },
   {
-    value: "renovation" as const,
-    label: "Rénovation",
+    value: "isolation" as const,
+    label: "Isolation thermique (ITE)",
     icon: Hammer,
   },
   {
-    value: "extension" as const,
-    label: "Extension",
+    value: "peinture" as const,
+    label: "Peinture & Enduits",
     icon: Maximize2,
   },
   {

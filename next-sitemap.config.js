@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://www.maconnerie-durand.fr",
+  siteUrl: process.env.SITE_URL || "https://www.agelfacades.fr",
   generateRobotsTxt: true,
   changefreq: "weekly",
   priority: 0.7,
@@ -9,9 +9,9 @@ module.exports = {
       "/": 1.0,
       "/contact": 0.9,
       "/services": 0.8,
-      "/construction-neuve": 0.8,
-      "/renovation-maconnerie": 0.8,
-      "/extension-surelevation": 0.8,
+      "/ravalement-facade": 0.8,
+      "/isolation-thermique": 0.8,
+      "/peinture-enduits": 0.8,
       "/realisations": 0.7,
       "/avis-clients": 0.7,
       "/a-propos": 0.6,

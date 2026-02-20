@@ -14,9 +14,9 @@ export const navLinks: NavLink[] = [
 ];
 
 export const footerServices: NavLink[] = [
-  { href: "/construction-neuve", label: "Construction neuve" },
-  { href: "/renovation-maconnerie", label: "Rénovation" },
-  { href: "/extension-surelevation", label: "Extension & Surélévation" },
+  { href: "/ravalement-facade", label: "Ravalement de façade" },
+  { href: "/isolation-thermique", label: "Isolation thermique (ITE)" },
+  { href: "/peinture-enduits", label: "Peinture & Enduits" },
   { href: "/services", label: "Tous nos services" },
 ];
 

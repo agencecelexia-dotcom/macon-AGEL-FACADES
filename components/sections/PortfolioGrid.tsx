@@ -22,9 +22,9 @@ export function PortfolioGrid() {
       : portfolioItems.filter((item) => item.category === activeFilter);
 
   const categoryLabels: Record<PortfolioCategory, string> = {
-    construction: "Construction",
-    renovation: "Rénovation",
-    extension: "Extension",
+    ravalement: "Ravalement",
+    isolation: "Isolation (ITE)",
+    peinture: "Peinture & Enduits",
   };
 
   return (
