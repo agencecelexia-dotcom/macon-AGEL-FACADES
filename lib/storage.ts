@@ -29,13 +29,19 @@ export interface AnalyticsEvent {
 
 // --------------- Paths ---------------
 
-const STORAGE_DIR = join(process.cwd(), "storage");
+const STORAGE_DIR = process.env.VERCEL
+  ? join("/tmp", "storage")
+  : join(process.cwd(), "storage");
 const SUBMISSIONS_FILE = join(STORAGE_DIR, "submissions.json");
 const ANALYTICS_FILE = join(STORAGE_DIR, "analytics.json");
 
 function ensureDir() {
-  if (!existsSync(STORAGE_DIR)) {
-    mkdirSync(STORAGE_DIR, { recursive: true });
+  try {
+    if (!existsSync(STORAGE_DIR)) {
+      mkdirSync(STORAGE_DIR, { recursive: true });
+    }
+  } catch {
+    // Read-only filesystem (Vercel) — ignore, reads will return []
   }
 }
 
@@ -54,6 +60,7 @@ export function readSubmissions(): Submission[] {
 export function saveSubmission(
   data: Omit<Submission, "id" | "createdAt" | "read">
 ): Submission {
+  ensureDir();
   const submissions = readSubmissions();
   const submission: Submission = {
     id: crypto.randomUUID(),
@@ -62,7 +69,11 @@ export function saveSubmission(
     ...data,
   };
   submissions.unshift(submission);
-  writeFileSync(SUBMISSIONS_FILE, JSON.stringify(submissions, null, 2));
+  try {
+    writeFileSync(SUBMISSIONS_FILE, JSON.stringify(submissions, null, 2));
+  } catch {
+    // Read-only filesystem — data won't persist
+  }
   return submission;
 }
 
@@ -71,7 +82,11 @@ export function markSubmissionRead(id: string): boolean {
   const sub = submissions.find((s) => s.id === id);
   if (!sub) return false;
   sub.read = true;
-  writeFileSync(SUBMISSIONS_FILE, JSON.stringify(submissions, null, 2));
+  try {
+    writeFileSync(SUBMISSIONS_FILE, JSON.stringify(submissions, null, 2));
+  } catch {
+    return false;
+  }
   return true;
 }
 
@@ -80,7 +95,11 @@ export function deleteSubmission(id: string): boolean {
   const idx = submissions.findIndex((s) => s.id === id);
   if (idx === -1) return false;
   submissions.splice(idx, 1);
-  writeFileSync(SUBMISSIONS_FILE, JSON.stringify(submissions, null, 2));
+  try {
+    writeFileSync(SUBMISSIONS_FILE, JSON.stringify(submissions, null, 2));
+  } catch {
+    return false;
+  }
   return true;
 }
 
@@ -101,6 +120,7 @@ export function readAnalytics(): AnalyticsEvent[] {
 export function saveEvent(
   data: Omit<AnalyticsEvent, "id" | "createdAt">
 ): AnalyticsEvent {
+  ensureDir();
   const events = readAnalytics();
   const event: AnalyticsEvent = {
     id: crypto.randomUUID(),
@@ -112,6 +132,10 @@ export function saveEvent(
   if (events.length > MAX_EVENTS) {
     events.splice(0, events.length - MAX_EVENTS);
   }
-  writeFileSync(ANALYTICS_FILE, JSON.stringify(events, null, 2));
+  try {
+    writeFileSync(ANALYTICS_FILE, JSON.stringify(events, null, 2));
+  } catch {
+    // Read-only filesystem — event won't persist
+  }
   return event;
 }
