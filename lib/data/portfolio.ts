@@ -9,7 +9,6 @@ export interface PortfolioItem {
   year: number;
   imageBefore: string;
   imageAfter: string;
-  images: string[];
   duration: string;
   surface?: string;
 }
@@ -24,10 +23,6 @@ export const portfolioItems: PortfolioItem[] = [
     year: 2025,
     imageBefore: "/images/portfolio/maison-plainpied-avant.jpg",
     imageAfter: "/images/portfolio/maison-plainpied-apres.jpg",
-    images: [
-      "/images/portfolio/maison-plainpied-1.jpg",
-      "/images/portfolio/maison-plainpied-2.jpg",
-    ],
     duration: "10 mois",
     surface: "120 m²",
   },
@@ -40,10 +35,6 @@ export const portfolioItems: PortfolioItem[] = [
     year: 2025,
     imageBefore: "/images/portfolio/facade-avant.jpg",
     imageAfter: "/images/portfolio/facade-apres.jpg",
-    images: [
-      "/images/portfolio/facade-1.jpg",
-      "/images/portfolio/facade-2.jpg",
-    ],
     duration: "3 semaines",
     surface: "85 m²",
   },
@@ -56,10 +47,6 @@ export const portfolioItems: PortfolioItem[] = [
     year: 2024,
     imageBefore: "/images/portfolio/extension-avant.jpg",
     imageAfter: "/images/portfolio/extension-apres.jpg",
-    images: [
-      "/images/portfolio/extension-1.jpg",
-      "/images/portfolio/extension-2.jpg",
-    ],
     duration: "4 mois",
     surface: "35 m²",
   },
@@ -72,10 +59,6 @@ export const portfolioItems: PortfolioItem[] = [
     year: 2024,
     imageBefore: "/images/portfolio/surelevation-avant.jpg",
     imageAfter: "/images/portfolio/surelevation-apres.jpg",
-    images: [
-      "/images/portfolio/surelevation-1.jpg",
-      "/images/portfolio/surelevation-2.jpg",
-    ],
     duration: "6 mois",
     surface: "70 m²",
   },
@@ -88,9 +71,6 @@ export const portfolioItems: PortfolioItem[] = [
     year: 2025,
     imageBefore: "/images/portfolio/mur-porteur-avant.jpg",
     imageAfter: "/images/portfolio/mur-porteur-apres.jpg",
-    images: [
-      "/images/portfolio/mur-porteur-1.jpg",
-    ],
     duration: "1 semaine",
   },
   {
@@ -102,58 +82,8 @@ export const portfolioItems: PortfolioItem[] = [
     year: 2024,
     imageBefore: "/images/portfolio/garage-avant.jpg",
     imageAfter: "/images/portfolio/garage-apres.jpg",
-    images: [
-      "/images/portfolio/garage-1.jpg",
-    ],
     duration: "2 mois",
     surface: "40 m²",
-  },
-  {
-    id: "renovation-toiture",
-    title: "Rénovation toiture et zinguerie",
-    description: "Remplacement complet de la couverture en tuiles, réfection des solins, pose de gouttières zinc et isolation sous rampants.",
-    category: "renovation",
-    location: "Sainte-Foy-lès-Lyon (69)",
-    year: 2025,
-    imageBefore: "/images/portfolio/toiture-avant.jpg",
-    imageAfter: "/images/portfolio/toiture-apres.jpg",
-    images: [
-      "/images/portfolio/toiture-1.jpg",
-      "/images/portfolio/toiture-2.jpg",
-    ],
-    duration: "2 semaines",
-    surface: "110 m²",
-  },
-  {
-    id: "mur-cloture",
-    title: "Mur de clôture en pierre",
-    description: "Construction d'un mur de clôture en pierre naturelle de 45 mètres linéaires avec portail et piliers intégrés. Fondations béton et couronnement en pierre taillée.",
-    category: "construction",
-    location: "Décines-Charpieu (69)",
-    year: 2024,
-    imageBefore: "/images/portfolio/cloture-avant.jpg",
-    imageAfter: "/images/portfolio/cloture-apres.jpg",
-    images: [
-      "/images/portfolio/cloture-1.jpg",
-    ],
-    duration: "3 semaines",
-    surface: "45 ml",
-  },
-  {
-    id: "amenagement-combles",
-    title: "Aménagement de combles 50m²",
-    description: "Transformation de combles perdus en deux chambres et une salle d'eau. Renforcement du plancher, création de lucarnes et cloisons de distribution.",
-    category: "extension",
-    location: "Bron (69)",
-    year: 2025,
-    imageBefore: "/images/portfolio/combles-avant.jpg",
-    imageAfter: "/images/portfolio/combles-apres.jpg",
-    images: [
-      "/images/portfolio/combles-1.jpg",
-      "/images/portfolio/combles-2.jpg",
-    ],
-    duration: "3 mois",
-    surface: "50 m²",
   },
 ];
 
